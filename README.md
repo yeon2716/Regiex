@@ -16,7 +16,35 @@
 # 문법
  1) Groups anf ranges
  -  | : 또는
+ - ![image](https://github.com/yeon2716/Regiex/assets/145514579/69721c2e-7c11-4a73-bdfa-096722236532)
+
  - () : 그룹
+ - ![image](https://github.com/yeon2716/Regiex/assets/145514579/862fc347-1358-47a2-bcff-036f41437e6b)
+
+
+    Expression은 그룹 첫번째에서, the는 그룹 두번째에서 찾아짐
+   
  - [] : 문자셋, 괄호안의 어떤 문자든
  - [^] : 부정 문자셋, 괄호안의 어떤 문자가 아닐때
- - (?) : 찾지만 기억하지는 않음
+ - (?:) : 찾지만 기억하지는 않음
+
+ # gr로 시작하고 중간글자가 e 또는 a 가 되고 y로 끝나는 것을 찾음
+ #[aed]  --> 대괄호 안의 글자중 하나라도 만족하는 것을 찾아라
+ /gr(e|a)y/gm
+
+ # 찾아는 지지만 그룹으로 만들고 싶지 않을때 사용
+ /gr(?:e|a)y/gm 
+
+
+
+# 괄호 안의 글자 중 하나라도 포함되는 것 찾을때
+- ![image](https://github.com/yeon2716/Regiex/assets/145514579/9a631109-a5a3-4078-8535-3f2a2d211e9c)
+![image](https://github.com/yeon2716/Regiex/assets/145514579/c9864318-442f-42dd-a4c2-47502a26c967)
+
+
+a 부터 g 까지 하나라도 포함되는 것
+![image](https://github.com/yeon2716/Regiex/assets/145514579/9eb3723d-5218-4b46-8e24-9c014cd47550)
+![image](https://github.com/yeon2716/Regiex/assets/145514579/a9aa6a71-4033-4552-b342-566cf39fbc50)
+
+
+ 
